@@ -8,11 +8,9 @@ import pandas as pd
 from webdriver_manager.firefox import GeckoDriverManager
 import requests
 import re
+import settings
 
-column = ["Name", "Link", "Price", "Max_Guest",
-          "Bedroom", "Bed", "Bath", "Rating"]
-
-df = pd.DataFrame(columns=column)
+driver = settings.driver
 def extract_number(input_str):
     if not input_str and not isinstance(input_str, str):
         return 0
@@ -36,7 +34,6 @@ def extract_price(input_str):
     return price_num
 #
 def scrape_airbnb_from_URL(url):
-    global df
     driver.get(url)
     driver.find_element_by_tag_name("body").send_keys(Keys.END)
     time.sleep(10)
@@ -48,16 +45,16 @@ def scrape_airbnb_from_URL(url):
     num = int(page.body.findAll("a", class_="_833p2h")[size-1].contents[0])
     print(num)
 
-    # for i in range(num):
+    #for i in range(num):
     page = BeautifulSoup(driver.page_source)
     arr = page.body.find_all("div", class_="c1o3pz3i")
 
     for x in arr:
         row = add_row(x, 1)
-        df = df.append(row, ignore_index=True)
+        settings.df = settings.df.append(row, ignore_index=True)
         
-    # driver.find_element_by_class_name("_1bfat5l").click()
-    # time.sleep(5)
+    #driver.find_element_by_class_name("_1bfat5l").click()
+    #time.sleep(5)
 
 def add_row(x, a_or_h):
     row = {"Name": "", "Link": "", "Price": "", "Max_Guest": "",
@@ -101,21 +98,4 @@ def add_row(x, a_or_h):
 
 
 
-driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 
-scrape_airbnb_from_URL("https://www.airbnb.com/s/Miami-Beach--FL--United-States/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=february&flexible_trip_dates%5B%5D=january&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&checkin=2022-03-13&checkout=2022-03-18&adults=9&query=Miami%20Beach%2C%20FL%2C%20United%20States&place_id=ChIJud3-Kxem2YgR62OUJUEXvjc&source=structured_search_input_header&search_type=autocomplete_click")
-
-
-
-
-
-
-
-
-ddf = df
-
-df
-
-ddf = df
-print("Gets here")
-df.to_excel("airbnb.xlsx")

@@ -653,3 +653,90 @@ console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkErr
 
 ATTENTION: default value of option mesa_glthread overridden by environment.
 ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iqES4/yZ/l/en_US/o5XjgaLVgY-.js?_nc_x=Ij3Wp8lg5Kz, line 20: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iqES4/yZ/l/en_US/o5XjgaLVgY-.js?_nc_x=Ij3Wp8lg5Kz, line 20: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iqES4/yZ/l/en_US/o5XjgaLVgY-.js?_nc_x=Ij3Wp8lg5Kz, line 20: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iRP_4/y1/l/en_US/GaJjjEqYD4T.js?_nc_x=59UCSvnEAnx, line 170: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7233 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7713 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 3861 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2388 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4560 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4257 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640372547201	geckodriver	INFO	Listening on 127.0.0.1:39953
+1640372547207	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43039" "-no-remote" "-profile" "/tmp/rust_mozprofile7Ifmmb"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640372548055	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7Ifmmb/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:43039/devtools/browser/c9121aba-df86-468c-85e1-0251d061b2b4
+1640372549272	Marionette	INFO	Listening on port 40399
+1640372549328	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640372552651	Marionette	INFO	Stopped listening on port 40399
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1640372848079	geckodriver	INFO	Listening on 127.0.0.1:58725
+1640372848092	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49429" "-no-remote" "-profile" "/tmp/rust_mozprofile6Iuydk"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640372849012	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6Iuydk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49429/devtools/browser/5dcc3e63-a094-4cab-8436-c1ed0a9b9885
+1640372850410	Marionette	INFO	Listening on port 36337
+1640372850540	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://a0.muscache.com/airbnb/static/packages/web/common/frontend/hyperloop-browser/core.752ee206f2.js, line 28: unreachable code after return statement
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4645 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 1994 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640372987901	geckodriver	INFO	Listening on 127.0.0.1:52023
+1640372987912	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58559" "-no-remote" "-profile" "/tmp/rust_mozprofileoEjYR9"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1640372988826	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoEjYR9/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58559/devtools/browser/3bde5317-6bba-41b9-86c5-eb7960a6ed63
+1640372990356	Marionette	INFO	Listening on port 40845
+1640372990434	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://a0.muscache.com/airbnb/static/packages/web/common/frontend/hyperloop-browser/core.752ee206f2.js, line 28: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7485 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 3948 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640373041696	Marionette	INFO	Stopped listening on port 36337
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
