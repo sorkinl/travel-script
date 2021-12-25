@@ -2,14 +2,15 @@ from numpy import Infinity
 from ortools.linear_solver import pywraplp
 from ortools.init import pywrapinit
 import pandas as pd
-from settings import df
+#from settings import df
 
 
 def main():
-    #df = pd.read_excel('table.xlsx')
+    df = pd.read_excel('table.xlsx')
     prices = df['Price'].tolist()
+    names = df["Name"].tolist()
     # Create the linear solver with the GLOP backend.
-    solver = pywraplp.Solver.CreateSolver('GLOP')
+    solver = pywraplp.Solver.CreateSolver('SCIP')
     # Create the variables x and y.
     list_of_vars = []
     for i in range(len(prices)):
@@ -36,10 +37,21 @@ def main():
     solver.Solve()
 
     print('Solution:')
-    print('Objective value =', objective.Value())
+    
     for i in range(len(prices)):
-        print(f'x{i} =', list_of_vars[i].solution_value())
+        if(list_of_vars[i].solution_value() != 0.0):
+            print(f'x{i} {names[i]} =', list_of_vars[i].solution_value())
+    
+    print('Objective value =', objective.Value())
 
+    for i in range(10):
+        print(solver.NextSolution())
+
+        for i in range(len(prices)):
+            if(list_of_vars[i].solution_value() != 0.0):
+                print(f'x{i} {names[i]} =', list_of_vars[i].solution_value())
+        
+        print('Objective value =', objective.Value())
 
 if __name__ == '__main__':
     pywrapinit.CppBridge.InitLogging('basic_example.py')

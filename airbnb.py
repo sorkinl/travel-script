@@ -39,7 +39,7 @@ def extract_number(input_str):
 
 
 def extract_price(input_str):
-    expr = '\$([0-9,]*\.?[0-9]*)'
+    expr = '\$?([0-9,]*\.?[0-9]*)'
 
     match = re.search(expr, input_str)
     print(match.group(0))              # give entire match
@@ -54,8 +54,20 @@ def extract_price(input_str):
 
 
 def scrape_airbnb_from_URL(url):
+    
     driver.get(url)
-    time.sleep(15)
+    time.sleep(20)
+    driver.find_element_by_tag_name("body").send_keys(Keys.END)
+    time.sleep(3)
+    listEl = driver.find_elements_by_class_name("_lb2964m")
+    listEl[len(listEl) -1].click()
+    time.sleep(2)
+    #driver.find_element_by_class_name("_fk86kl8").send_keys(Keys.END)
+    time.sleep(1)
+    list_buttons = driver.find_elements_by_tag_name("li")
+    list_buttons[len(list_buttons)-2].click()
+    time.sleep(7)
+    #driver.add_cookie({'name' : 'currency', 'value' : 'USD'})
     source_element = driver.find_element_by_class_name("_1bfat5l")
     if 'firefox' in driver.capabilities['browserName']:
         scroll_shim(driver, source_element)
